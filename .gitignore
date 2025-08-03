@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+.cache/
+*.log
+
+# Environments
+.env
+*.env
+
+# VSCode/JetBrains
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Output & temp
+output/
+temp/
