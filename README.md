@@ -1,16 +1,34 @@
-HEAD
-# Paperless AI Project
+Paperless-AI Project (Basic)
 
-AI-powered document management system using Paperless-NGX, OCR (YOLOv8/EasyOCR), and LLM integration.
+Cara Install Paperless-NGX
 
-## Folders
-- `config/`: config & .env examples
-- `docs/`: documentation, setup guide
-- `samples/`: sample files for test/demo
-- `scripts/`: main automation scripts
+1.Clone repo ini dari cmd
 
-## Quick Start
-Lihat panduan di `docs/`
-=======
-# paperless-ai-project
-c98b04d31ff5ca2c4d872b8197846012fb12a66a
+	git clone https://github.com/imrandwinurmara/paperless-ai-project.git
+
+	cd paperless-ai-project
+
+2. Jalankan Docker Compose
+
+	A. Pastikan kamu sudah install Docker Desktop
+
+		Docker adalah aplikasi wajib yang harus terpasang di komputer untuk menjalankan project ini.
+
+
+	B. Buka kembali Command Prompt (atau tetap di jendela tadi), lalu ketik:
+
+		docker-compose up -d
+
+3. Akses Paperless-NGX di Browser
+
+
+	Ketik alamat: http://localhost:8000
+	
+	Default login:
+
+	Username: admin
+
+	Password: admin
+
+
+
