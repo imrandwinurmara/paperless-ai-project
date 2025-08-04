@@ -1,9 +1,9 @@
-# Byte-compiled / optimized / DLL files
+# Python artifacts
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Caches
+# Caches & logs
 .cache/
 *.log
 
@@ -11,14 +11,23 @@ __pycache__/
 .env
 *.env
 
-# VSCode/JetBrains
+# IDE folders
 .vscode/
 .idea/
 
-# System
+# System files
 .DS_Store
 Thumbs.db
 
 # Output & temp
 output/
 temp/
+
+# Paperless-NGX Docker Volumes (JANGAN DI-PUSH KE GIT)
+paperless_ngx/data/
+paperless_ngx/media/
+paperless_ngx/consume/
+paperless_ngx/export/
+paperless_ngx/db/
+paperless_ngx/redis/
+paperless_ngx/uploads/

@@ -26,6 +26,23 @@ Cara Install Paperless-NGX
 	└─ README.md
 	Note: Pastikan nama folder persis sama seperti di file docker-compose.yml
 
+	D:\paperless-ai-project
+	│
+	├─ .git/               # Folder git (otomatis)
+	├─ config/             # Konfigurasi tambahan
+	├─ docs/               # Dokumentasi & panduan
+	├─ paperless_ngx/      # Data volume Paperless-NGX (data, media, db, dll)
+	├─ paperless-ai/       # Project/servis AI kamu sendiri
+	├─ samples/            # Contoh data/file untuk testing
+	├─ scripts/            # Script otomasi atau utilitas lain
+	│
+	├─ .gitignore
+	├─ docker-compose.yml  # Docker Compose utama
+	├─ hook_server.py      # Script custom
+	├─ last_webhook_raw.bin
+	├─ README.md           # Panduan utama project
+
+
 3. Jalankan Docker Compose
 
 	A. Pastikan kamu sudah install Docker Desktop
