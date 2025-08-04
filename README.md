@@ -1,20 +1,27 @@
-Paperless-AI Project (Basic)
+# Paperless-AI Project (Basic)
 
-Cara Install Paperless-NGX
+Panduan install Paperless-NGX (tested Windows).
 
-1.Clone repo ini dari cmd
+---
 
-	git clone https://github.com/imrandwinurmara/paperless-ai-project.git
+## 1. Clone repo ini dari CMD (admin mode)
 
-	cd paperless-ai-project
+```bash
+git clone https://github.com/imrandwinurmara/paperless-ai-project.git
+cd paperless-ai-project
 
-2.Buat folder Paperless Ngx
+
+
+2. installl Docker Desktop
+
+
+3.Buat folder Paperless Ngx
 	
-	Sebelum menjalankan perintah docker-compose up -d, buat dulu struktur folder yang dibutuhkan supaya data, dokumen, dan database bisa tersimpan dengan benar.
+ Sebelum menjalankan perintah docker-compose up -d, buat dulu struktur folder yang dibutuhkan supaya data, dokumen, dan database bisa tersimpan dengan benar.
 
-	Buka lokasi project-mu (misal, D:\paperless-ai-project)
+ Buka lokasi project-mu (misal, D:\paperless-ai-project)
 
-	Buat folder baru dengan nama:
+ Buat folder baru dengan nama:
 
 	paperless-ai-project/
 	├─paperless_ngx
@@ -24,47 +31,43 @@ Cara Install Paperless-NGX
 	  ├─ export/
 	├─ docker-compose.yml 
 	└─ README.md
-	Note: Pastikan nama folder persis sama seperti di file docker-compose.yml
-
-	D:\paperless-ai-project
-	│
-	├─ .git/               # Folder git (otomatis)
-	├─ config/             # Konfigurasi tambahan
-	├─ docs/               # Dokumentasi & panduan
-	├─ paperless_ngx/      # Data volume Paperless-NGX (data, media, db, dll)
-	├─ paperless-ai/       # Project/servis AI kamu sendiri
-	├─ samples/            # Contoh data/file untuk testing
-	├─ scripts/            # Script otomasi atau utilitas lain
-	│
-	├─ .gitignore
-	├─ docker-compose.yml  # Docker Compose utama
-	├─ hook_server.py      # Script custom
-	├─ last_webhook_raw.bin
-	├─ README.md           # Panduan utama project
+ Note: Pastikan nama folder persis sama seperti di file docker-compose.yml
 
 
-3. Jalankan Docker Compose
+4. Jalankan Docker Compose
 
-	A. Pastikan kamu sudah install Docker Desktop
+ Pastikan Docker Desktop sudah terinstall.
 
-	Docker adalah aplikasi wajib yang harus terpasang di komputer untuk menjalankan project ini.
-
-
-	B. Buka kembali Command Prompt (atau tetap di jendela tadi), lalu ketik:
+ Buka kembali Command Prompt (admin mode), lalu ketik:
 
 	docker-compose up -d
 
-4. Akses Paperless-NGX di Browser 
+	
 
-	Ketik alamat: http://localhost:8000
+5. Akses Paperless-NGX di Browser 
 
-	(jika membutuhkan)
+ Ketik alamat: http://localhost:8000
 
-	Default login:
+ Default login:
 
-		Username: admin
+	Username: admin
 
-		Password: admin
+	Password: admin
 
+6. Selesai!
+
+ Semua dokumen yang di-upload, database, dan file hasil scan otomatis masuk ke folder paperless_ngx/.
+ Kalau ada error atau masalah, cek panduan lengkap/troubleshooting di folder docs/
+
+
+
+Tips:
+ Kalau mau ganti lokasi penyimpanan data, cukup edit path di docker-compose.yml.
+ Untuk kolaborasi, share repo ini ke tim.  
+ Selalu pastikan .gitignore sudah mengabaikan folder data.
+
+
+Selamat mencoba!   
+Kalau butuh bantuan, tinggal mention lewat issue di GitHub.
 
 
